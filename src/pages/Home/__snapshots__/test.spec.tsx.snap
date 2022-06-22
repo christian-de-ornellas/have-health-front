@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> should  1`] = `
+<h1>
+  Oi eu sou a home
+</h1>
+`;
+
+exports[`<Home /> should render and component defined 1`] = `
+<h1>
+  Oi eu sou a home
+</h1>
+`;
+
+exports[`<Home /> should render component 1`] = `
+<h1>
+  Oi eu sou a home
+</h1>
+`;
+
+exports[`first should  1`] = `
+<h1>
+  Oi eu sou a home
+</h1>
+`;
