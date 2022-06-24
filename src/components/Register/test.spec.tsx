@@ -1,12 +1,12 @@
 import { render, screen } from '@testing-library/react';
-import Home from '.';
+import Register from '.';
 import { MyThemeProvider } from '../../styles/MyThemeProvider';
 
-describe('<Home />', () => {
+describe('<Register />', () => {
   it('should render component', () => {
     render(
       <MyThemeProvider>
-        <Home />
+        <Register />
       </MyThemeProvider>,
     );
     expect(screen).toBeDefined();

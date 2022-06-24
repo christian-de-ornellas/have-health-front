@@ -1,6 +1,7 @@
 import { ChildrenProps } from '../../types/global-types';
 import { Container } from './styles';
 
-export const App: React.FC<ChildrenProps> = ({ children }) => {
+const Card: React.FC<ChildrenProps> = ({ children }): JSX.Element => {
   return <Container>{children}</Container>;
 };
+export default Card;

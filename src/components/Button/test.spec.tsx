@@ -1,14 +1,14 @@
 import { render, screen } from '@testing-library/react';
-import Home from '.';
+import Button from '.';
 import { MyThemeProvider } from '../../styles/MyThemeProvider';
 
-describe('<Home />', () => {
+describe('<Button />', () => {
   it('should render component', () => {
     render(
       <MyThemeProvider>
-        <Home />
+        <Button value="Save" />
       </MyThemeProvider>,
     );
-    expect(screen).toBeDefined();
+    expect(screen.getByRole('button')).toBeInTheDocument();
   });
 });
