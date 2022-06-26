@@ -1,6 +1,6 @@
 import axios from 'axios';
 
 export const http = axios.create({
-  baseURL: 'http://localhost:3333',
+  baseURL: import.meta.env.BASE_URL_API,
   timeout: 1000,
 });
