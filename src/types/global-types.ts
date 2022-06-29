@@ -9,12 +9,12 @@ export interface ClinicResponseOutput {
   place: string;
   number: number;
   neighborhood: string;
-  complement: string;
+  complement: string | null;
   city: string;
   state: string;
   country: string;
   lat: number;
-  long: number;
+  lng: number;
   created_at: Date;
 }
 
@@ -22,12 +22,11 @@ export interface ClinicRequestOutput {
   name: string;
   cnpj: string;
   place: string;
-  number: number;
+  number: string;
   neighborhood: string;
-  complement: string;
   city: string;
   state: string;
   country: string;
   lat: number;
-  long: number;
+  lng: number;
 }

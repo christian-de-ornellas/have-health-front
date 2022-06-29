@@ -5,9 +5,11 @@
     "dictionaries": [],
     "words": [
         "cnpj",
+        "combobox",
         "esbuild",
         "esnext",
-        "pinst"
+        "pinst",
+        "sublocality"
     ],
     "ignoreWords": [],
     "import": []
