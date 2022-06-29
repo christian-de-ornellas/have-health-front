@@ -4,19 +4,14 @@ export const Container = styled.div`
 display: flex;
 justify-content: center;
 flex-direction: column;
+width: 100%;
+
 `;
-export const Heading = styled.header`
+export const Heading = styled.h3`
 display: flex;
 justify-content: center;
 color: ${({ theme }) => theme.colors.primary};
 text-transform: uppercase;
-`;
-export const FormGroup = styled.div`
-padding: 1rem 0;
-`;
-
-export const FormContainer = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
+font-size: 1rem;
+font-weight: 400;
 `;

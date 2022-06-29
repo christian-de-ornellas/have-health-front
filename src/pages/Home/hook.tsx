@@ -1,12 +1,11 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { getClinic } from '../../services/clinic';
 import { ClinicResponseOutput } from '../../types/global-types';
 
 export const useHome = () => {
-  const isInitialMount = useRef(true);
   const [clinics, setClinics] = useState<ClinicResponseOutput[]>([]);
 
-  const getClinics = async (): Promise<void> => {
+  const fetchClinics = async (): Promise<void> => {
     try {
       const response = await getClinic();
       setClinics(response.result);
@@ -16,11 +15,7 @@ export const useHome = () => {
   };
 
   useEffect(() => {
-    if (isInitialMount.current) {
-      isInitialMount.current = false;
-    } else {
-      getClinics();
-    }
+    fetchClinics();
   }, []);
 
   return { clinics };

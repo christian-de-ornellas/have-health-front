@@ -7,7 +7,8 @@
         "cnpj",
         "esbuild",
         "esnext",
-        "pinst"
+        "pinst",
+        "sublocality"
     ],
     "ignoreWords": [],
     "import": []

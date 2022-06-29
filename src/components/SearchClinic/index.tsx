@@ -5,12 +5,14 @@ import { Container } from './styles';
 
 const SearchClinic: React.FC = (): JSX.Element => {
   return (
-    <Card>
-      <Container>
-        <FormInput type="text" placeholder="Nome da Clínica" />
-        <Button value="Buscar" />
-      </Container>
-    </Card>
+    <div style={{ width: '84%' }}>
+      <Card width="80%">
+        <Container>
+          <FormInput type="text" placeholder="Nome da Clínica" width="100%" />
+          <Button value="Buscar" />
+        </Container>
+      </Card>
+    </div>
   );
 };
 export default SearchClinic;

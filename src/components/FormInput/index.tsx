@@ -1,5 +1,5 @@
 import { Input } from './styles';
-
+import { ChangeEvent } from 'react';
 interface FormInputProps {
   type:
     | 'text'
@@ -15,7 +15,10 @@ interface FormInputProps {
   id?: string;
   placeholder?: string;
   onClick?: () => void;
-  onChange?: (event: { target: { value: string | number } }) => void;
+  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
+  width?: string;
+  textAlign?: string;
+  disabled?: boolean;
 }
 const FormInput: React.FC<FormInputProps> = (props): JSX.Element => {
   return <Input {...props} />;
