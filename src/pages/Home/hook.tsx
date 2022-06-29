@@ -16,7 +16,7 @@ export const useHome = () => {
 
   useEffect(() => {
     fetchClinics();
-  }, [fetchClinics]);
+  }, []);
 
   return { clinics };
 };
