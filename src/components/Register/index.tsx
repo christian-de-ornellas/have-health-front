@@ -2,7 +2,7 @@ import Button from '../Button';
 import Card from '../Card';
 import FormInput from '../FormInput';
 import { useRegister } from './hook';
-import { Container, Heading } from './styles';
+import { Container, Form, Heading } from './styles';
 import { logHelper } from '../../util/LogHelper';
 import {
   Combobox,
@@ -52,10 +52,10 @@ const Register: React.FC = (): JSX.Element => {
   });
 
   return (
-    <div style={{ width: '100%' }}>
+    <Container>
       <Card width="100%">
         <Heading>Cadastro de Clínicas</Heading>
-        <Container>
+        <Form>
           <FormInput
             type="text"
             name="name"
@@ -102,7 +102,7 @@ const Register: React.FC = (): JSX.Element => {
                 placeholder="Endereço"
               />
 
-              <ComboboxPopover>
+              <ComboboxPopover style={{ position: 'absolute', zIndex: 999 }}>
                 <ComboboxList>
                   {status === 'OK' && renderSuggestions()}
                 </ComboboxList>
@@ -138,9 +138,9 @@ const Register: React.FC = (): JSX.Element => {
           </div>
 
           <Button value="Cadastrar" onClick={handleOnSubmit} />
-        </Container>
+        </Form>
       </Card>
-    </div>
+    </Container>
   );
 };
 export default Register;

@@ -5,10 +5,10 @@ import { Container } from './styles';
 
 const SearchClinic: React.FC = (): JSX.Element => {
   return (
-    <div style={{ width: '84%' }}>
-      <Card width="80%">
+    <div style={{ display: 'flex', flex: 4, height: '6rem' }}>
+      <Card width="100%">
         <Container>
-          <FormInput type="text" placeholder="Nome da Clínica" width="100%" />
+          <FormInput type="text" placeholder="Endereço" width="100%" />
           <Button value="Buscar" />
         </Container>
       </Card>

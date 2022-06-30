@@ -6,7 +6,7 @@ describe('<Card />', () => {
   it('should render component', () => {
     render(
       <MyThemeProvider>
-        <Card>
+        <Card width="100%">
           <>
             <h1>Eu sou o card</h1>
           </>

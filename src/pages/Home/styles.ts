@@ -1,15 +1,26 @@
 import styled from 'styled-components';
+import { device } from '../../styles/rwd';
 
 export const Container = styled.div`
+z-index: 999;
+position: absolute;
+width: 90%;
 display: flex;
-padding: 1rem 3rem;
-flex-direction: column;
-align-items: space-between;
-width: 100%;
+justify-content:center;
+gap: 3rem;
+margin-top: 0.8rem;
+
+
+@media ${device.tablet} { 
+  display: flex; 
+  flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
 `;
-export const Header = styled.header`
+export const MapHeader = styled.header`
 display: flex;
-justify-content: space-between;
+justify-content:space-around;
 `;
 
 export const Bottom = styled.footer`

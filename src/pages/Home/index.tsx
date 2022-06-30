@@ -1,4 +1,4 @@
-import { Bottom, Container, Header } from './styles';
+import { Bottom, Container, MapHeader } from './styles';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import Register from '../../components/Register';
 import SearchClinic from '../../components/SearchClinic';
@@ -12,24 +12,15 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <Container>
-        <Header>
-          <Register />
-          <SearchClinic />
-        </Header>
-        {/*    <Bottom>
-      <Card width="18rem">
-        <h2>Nome da empresa</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-      </Card>
-    </Bottom> */}
-      </Container>
       <MapContainer
         center={[-22.7757511, -43.359684]}
         zoom={13}
         scrollWheelZoom={false}
-        style={{ zIndex: 999 }}
       >
+        <Container>
+          <Register />
+          <SearchClinic />
+        </Container>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
