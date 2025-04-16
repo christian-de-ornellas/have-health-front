@@ -1,0 +1,16 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "cnpj",
+        "combobox",
+        "esbuild",
+        "esnext",
+        "pinst",
+        "sublocality"
+    ],
+    "ignoreWords": [],
+    "import": []
+}
